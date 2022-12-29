@@ -11,7 +11,7 @@ import SwiftUI
 struct AudiSwiftUIAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AudiModelsView()
         }
     }
 }

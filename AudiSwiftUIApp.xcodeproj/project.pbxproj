@@ -13,6 +13,10 @@
 		B23EAFF12935B2650048E6ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23EAFF02935B2650048E6ED /* Preview Assets.xcassets */; };
 		B2A819E82935B535007E01AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B2A819E72935B535007E01AB /* Kingfisher */; };
 		B2A819EB2935B59D007E01AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B2A819EA2935B59D007E01AB /* Lottie */; };
+		B2BDCE742936E8E700BC93CE /* AudiModelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDCE732936E8E700BC93CE /* AudiModelsView.swift */; };
+		B2BDCE772936EAB000BC93CE /* AudiCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDCE762936EAB000BC93CE /* AudiCarModel.swift */; };
+		B2BDCE7A2936EAFC00BC93CE /* AudiCarVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDCE792936EAFC00BC93CE /* AudiCarVersion.swift */; };
+		B2BDCE7E2936EDDE00BC93CE /* AudiModelGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDCE7D2936EDDE00BC93CE /* AudiModelGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		B23EAFEB2935B2630048E6ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B23EAFED2935B2650048E6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B23EAFF02935B2650048E6ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2BDCE732936E8E700BC93CE /* AudiModelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiModelsView.swift; sourceTree = "<group>"; };
+		B2BDCE762936EAB000BC93CE /* AudiCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiCarModel.swift; sourceTree = "<group>"; };
+		B2BDCE792936EAFC00BC93CE /* AudiCarVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiCarVersion.swift; sourceTree = "<group>"; };
+		B2BDCE7D2936EDDE00BC93CE /* AudiModelGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiModelGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,9 @@
 		B23EAFE82935B2630048E6ED /* AudiSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2BDCE7B2936EC9A00BC93CE /* Views */,
+				B2BDCE752936EA9500BC93CE /* Models */,
+				B2BDCE712936E89E00BC93CE /* Modules */,
 				B23EAFE92935B2630048E6ED /* AudiSwiftUIAppApp.swift */,
 				B23EAFEB2935B2630048E6ED /* ContentView.swift */,
 				B23EAFED2935B2650048E6ED /* Assets.xcassets */,
@@ -69,6 +80,47 @@
 				B23EAFF02935B2650048E6ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2BDCE712936E89E00BC93CE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDCE722936E8B600BC93CE /* AudiModels */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B2BDCE722936E8B600BC93CE /* AudiModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDCE732936E8E700BC93CE /* AudiModelsView.swift */,
+			);
+			path = AudiModels;
+			sourceTree = "<group>";
+		};
+		B2BDCE752936EA9500BC93CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDCE762936EAB000BC93CE /* AudiCarModel.swift */,
+				B2BDCE792936EAFC00BC93CE /* AudiCarVersion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2BDCE7B2936EC9A00BC93CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDCE7C2936ECA900BC93CE /* AudiModelGridView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2BDCE7C2936ECA900BC93CE /* AudiModelGridView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDCE7D2936EDDE00BC93CE /* AudiModelGridView.swift */,
+			);
+			path = AudiModelGridView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BDCE7A2936EAFC00BC93CE /* AudiCarVersion.swift in Sources */,
 				B23EAFEC2935B2630048E6ED /* ContentView.swift in Sources */,
 				B23EAFEA2935B2630048E6ED /* AudiSwiftUIAppApp.swift in Sources */,
+				B2BDCE742936E8E700BC93CE /* AudiModelsView.swift in Sources */,
+				B2BDCE772936EAB000BC93CE /* AudiCarModel.swift in Sources */,
+				B2BDCE7E2936EDDE00BC93CE /* AudiModelGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
